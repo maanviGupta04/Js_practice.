@@ -1,0 +1,12 @@
+console.log("Maan\"".length);
+console.log("\" Maan\"".length);
+console.log("He said \"Hello\"".length);
+console.log('It\'s fine'.length);
+console.log("C:\\folder\\file".length);
+console.log("Hi\nHello".length);
+console.log("A\tB".length);
+console.log("\"Hello\"".length);
+console.log("\" hi \"".length);
+console.log("".length);
+console.log("\\\"".length);
+console.log("A\\B\"C\nD\tE".length);
