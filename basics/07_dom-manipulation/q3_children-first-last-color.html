@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box{
+            height: 30vh;
+            width: 30vh;  
+            border: 2px solid black;
+            text-align: center;   
+            line-height: 30vh;     
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <script>
+         let nana=document.getElementsByClassName("box")
+         nana[0].style.backgroundColor="green"
+         nana[2].style.backgroundColor="green"
+         
+    </script>
+</body>
+</html>
