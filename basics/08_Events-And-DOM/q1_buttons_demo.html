@@ -23,7 +23,14 @@
    <div class="bt1">CLICK ME 2</div>
    <div class="bt1">CLICK ME 3</div>
    <div class="bt1">CLICK ME 4</div>
-   <script src="EX8(a).js"></script>
+   <script>
+       
+        let button = document.querySelectorAll(".bt1").forEach((e, index)=>e.addEventListener("click", ()=>{
+        alert(`button ${index+1} clicked`)
+         }))
+
+        console.log(button)
+   </script>
 
 </body>
 </html> 
