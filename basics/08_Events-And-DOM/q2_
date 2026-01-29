@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="google">Google</button>
+<button id="youtube">YouTube</button>
+
+<script>
+document.getElementById("google").addEventListener("click", function () {
+    window.location.href = "https://google.com";
+});
+
+document.getElementById("youtube").addEventListener("click", function () {
+    window.location.href = "https://youtube.com";
+});
+</script>
+
+</body>
+</html>
