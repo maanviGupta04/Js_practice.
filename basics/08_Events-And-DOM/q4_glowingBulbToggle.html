@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bulb{
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .glow{
+            background-color: yellow;
+            box-shadow: 0px 0px 9px 9px;
+        }
+
+        .blow{
+            animation: lala 3s 1s 1 backwards;
+            background-color: aquamarine;
+        }
+
+        @keyframes lala{
+            from{
+      
+            }
+
+            to{
+               transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <div class="bulb" id="bulb"></div>
+    <button onclick="toggleit()">ON/OFF</button>
+  
+
+    <script>
+        function toggleit(){
+        let blue=document.getElementById("bulb").classList.toggle("glow")
+        console.log(blue)
+        }  
+    </script>
+</body>
+</html>
