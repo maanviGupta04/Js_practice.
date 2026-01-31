@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+       async function loadfile(src){
+         let file=document.createElement("script")
+         file.src=src
+         
+        const message= await new Promise((resolve,reject)=>{
+            file.onload=()=>resolve("The load was successfull")
+            file.onerror=()=>reject("The load was not successfull") 
+            document.head.append(file)
+         });
+
+         return message;
+
+       }
+       loadfile("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js")
+       .then((msg) => {
+    alert(msg);
+  })
+  .catch(() => {
+    alert("The load was not successful");
+  });
