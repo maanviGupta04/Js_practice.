@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+     <script>
+        function rejection(){
+    return new Promise((resolve ,reject)=>{
+      setTimeout(() => {
+            reject("The request is rejected")
+        }, 3000);
+    })
+}
+
+async function stim(){
+
+    try {
+    const result = await rejection();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+stim();
+     </script>
+</body>
+</html>
+
